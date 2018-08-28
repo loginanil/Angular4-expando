@@ -68,7 +68,7 @@ export class AppComponent   {
 
   constructor(){
     this.grid = { rows:  
-    this.getExpandoRow({}, 2)
+    this.getExpandoRow({}, 50)
   }; 
   }
 

@@ -13,5 +13,8 @@ export class TextInputComponent implements OnInit {
 
   ngOnInit() {
   }
+  keydown(event) {
+    //console.time('')
+  }
 
 }
