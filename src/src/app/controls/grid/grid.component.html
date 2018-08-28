@@ -1,0 +1,12 @@
+<div class="row" *ngFor="let row of grid?.rows">
+        <span *ngFor="let column of row.cols" class="{{column.colClass}}" >
+            
+            <app-text-input *ngIf="column.item.bwItemType == 'TEXTBOX'"
+                           [item]="column.item" >
+            </app-text-input>
+            <app-expando *ngIf="column.item.bwItemType == 'EXPANDO' "
+                        [item]="column.item" >
+            </app-expando>
+
+        </span>
+</div>
